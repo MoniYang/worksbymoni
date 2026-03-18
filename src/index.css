@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+  --font-zen-antique: "Zen Antique", serif;
+}
+
+@theme inline {
+  --font-zen-antique: var(--font-zen-antique);
+}
+
+body {
+  font-family: var(--font-zen-antique);
+  margin: 0;
+  background-image: url("./assets/img/dot-grid.png");
+
+  background-color: black;
+}
