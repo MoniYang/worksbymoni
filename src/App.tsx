@@ -1,14 +1,14 @@
 import Intro from "./components/Intro";
-import WorksEntrance from "./components/worksEntrance";
+import WorksEntrance from "./components/WorksEntrance";
 import About from "./components/About";
 import bgImg from "./assets/img/dot-grid.png"
 import Nav from "./components/Nav"
 import ToDoList from "./components/Demo1"
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-     <BrowserRouter>
+     <HashRouter>
     <div className="flex   min-h-screen ">
      
       <main className="flex w-full flex-col  container mx-auto my-20 bg-white px-20 shadow-2xl/30">
@@ -32,7 +32,7 @@ function App() {
       </div>
     
     </div>
-     </BrowserRouter>
+     </HashRouter>
   );
 }
 
