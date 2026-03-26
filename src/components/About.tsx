@@ -2,7 +2,7 @@
 
 export default function Intro() {
   return (
-    <div className="h-[460px] flex flex-none  bg-no-repeat  " >
+    <div className=" flex flex-none  bg-no-repeat  " >
         <div className="container  space-y-4 text-slate-400 mx-auto my-auto text-left  text-slate-600">
          <h2>About Moni</h2>
          <p>

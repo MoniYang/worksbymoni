@@ -1,10 +1,13 @@
 import Intro from "./components/Intro";
-import WorksEntrance from "./components/WorksEntrance";
+import { WorksEntrance, SideProject } from "./components/WorksEntrance";
 import About from "./components/About";
 import bgImg from "./assets/img/dot-grid.png"
 import Nav from "./components/Nav"
-import ToDoList from "./components/Demo1"
+import ToDoList from "./components/side-project/TodoList"
+import Topic from "./components/Topic"
+import Section from "./components/Section"
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
+import WheelGame from "./components/side-project/WheelGame";
 
 function App() {
   return (
@@ -16,12 +19,31 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-            <Nav/>
+            {/* <Nav/> */}
+            <Section>
             <Intro />
+            </Section>
+            <hr className="border-slate-200"/>
+            <Section>
             <About />
+            </Section>
+            <hr className="border-slate-200"/>
+
+            <Section>
+              <Topic text="SideProject" />
+               <SideProject />
+            </Section>
+
+            <hr className="border-slate-200"/>
+           
+            <Section>
+               <Topic text="Selected Works" />
+                <WorksEntrance />
+            </Section>
             </>
           } />
-          <Route path="/Demo1" element={<ToDoList />} />
+          <Route path="/TodoList" element={<ToDoList />} />
+          <Route path="/WheelGame" element={<WheelGame />} />
         </Routes>
        
       

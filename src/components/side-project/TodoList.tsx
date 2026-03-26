@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { cn } from "../lib/utils"
+import { cn } from "../../lib/utils"
 const ToDoListItem = ({text, onClick, toggleOnClick,  className }: {text: string, onClick: () => void, toggleOnClick : () => void, className : string }) => {
     return (
         <li className="flex flex-1 pb-3 items-center">

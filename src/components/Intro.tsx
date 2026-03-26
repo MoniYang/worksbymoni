@@ -4,7 +4,7 @@ import introImg from "../assets/img/intro_2.jpg"
 
 export default function Intro() {
   return (
-    <div className=" flex flex-none py-10">
+    <div className=" flex flex-none">
         <div className="container flex justify-center items-center space-y-4 text-slate-400 mx-auto my-auto text-slate-600">
           <div className="w-3/5">
             <img src={introImg} alt="" />
